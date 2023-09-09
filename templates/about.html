@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% block title %}About{% endblock title %}
+{% block body %}
+
+<style>
+   
+    body {
+      padding-top: 80px; 
+  
+   
+    .crd:first-child {
+      margin-top: -24px; 
+    }
+  </style>
+
+
+
+<div id="accordion">
+    <div class="crd">
+      <div class="card-header" id="headingOne">
+        <h5 class="mb-0">
+          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+           About Me 
+          </button>
+        </h5>
+      </div>
+  
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+        <div class="card-body">
+            I'm a full stack developer who strives to get better every day by developing websites and web applications to make up for my lack of experience. I have developed numerous projects using languages, frameworks like Python, HTML&CSS, JavaScript, React, Node, Express, Django Mongo, etc.
+        </div>
+      </div>
+    </div>
+    
+    <div class="crd">
+      <div class="card-header" id="headingThree">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Making Of This Project
+          </button>
+        </h5>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+        <div class="card-body">
+         Used HTML&CSS - Bootstrap, TypedJS and Django.
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock body %}
